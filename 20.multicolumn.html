@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolumn | Front End Developer</title>
+    <style>
+        .container {
+            width: 800px;
+            border: 1px solid black;
+            padding: 5px;
+            margin: auto;
+        }
+        
+        .column1 {
+            width: 150px;
+            height: 500px;
+            background-color: blueviolet;
+            float: left;
+        }
+        
+        .column2 {
+            width: 500px;
+            height: 500px;
+            background-color: cyan;
+            float: left;
+        }
+        
+        .column3 {
+            width: 150px;
+            height: 500px;
+            background-color: red;
+            float: left;
+        }
+        
+        .clear {
+            clear: left;
+        }
+        /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+        
+        .cf:before,
+        .cf:after {
+            content: " ";
+            /* 1 */
+            display: table;
+            /* 2 */
+        }
+        
+        .cf:after {
+            clear: both;
+        }
+        /**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+        
+        .cf {
+            *zoom: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container cf">
+        <div class="column1"></div>
+        <div class="column2"></div>
+        <div class="column3"></div>
+
+        <!-- <div class="clear"></div> -->
+    </div>
+
+</body>
+
+</html>
