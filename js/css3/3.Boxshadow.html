@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow | CSS3</title>
+    <style>
+        .satu {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: brown;
+            box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.5);
+            transition: 300ms;
+        }
+        
+        .satu:hover {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: brown;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: 300ms;
+        }
+        
+        .dua {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: brown;
+            box-shadow: inset 30px 30px 10px rgba(0, 0, 0, 0.5);
+            transition: 300ms;
+        }
+        
+        .dua:hover {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: brown;
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: 300ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="satu"></div>
+
+    <div class="dua"></div>
+</body>
+
+</html>
